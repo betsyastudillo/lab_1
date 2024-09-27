@@ -1,0 +1,66 @@
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+    align-items: center; /* Centra verticalmente los elementos */
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    padding-left: 3%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+.price-compare {
+    margin-right: 10px;
+    text-decoration: line-through;
+}
+
+.item-price {
+    font-size: 20px;
+    font-weight: 700;
+}
+.carousel-item .text-container {
+    position: absolute;
+    bottom: 0;
+    left: 3.5rem;
+    width: 80%;
+    padding: 1px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    color: white;
+    text-align: center;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
